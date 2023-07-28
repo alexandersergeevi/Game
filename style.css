@@ -6,7 +6,7 @@
 @font-face {
     font-family: "StratosSkyeng";
     font-weight: 400;
-    src: url(/statosskyeng-v1.001/Web\ fonts/stratosskyengweb-regular.woff);
+    src: url(/fonts/stratosskyengweb-regular.woff);
 }
 
 body {
@@ -48,13 +48,20 @@ body {
     width: 208px;
 }
 
-.levels {
+.radio-toolbar {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.number {
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 98px;
     width: 98px;
     background-color: #FFFFFF;
@@ -67,6 +74,18 @@ body {
     line-height: 78px;
     color: #0080C1;
     cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    box-sizing: border-box;
+    background-color: #d0ffb7;
+    border: 1px solid #1CA92E;
+}
+
+.radio-toolbar label:hover {
+    box-sizing: border-box;
+    background-color: #d0ffb7;
+    border: 1px solid #1CA92E;
 }
 
 .button {
