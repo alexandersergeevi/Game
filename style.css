@@ -20,7 +20,6 @@ body {
 
 .app {
     background-color: #004980;
-    height: 774px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,18 +47,23 @@ body {
     width: 208px;
 }
 
-.radio-toolbar {
+.level-toolbar {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 20px;
 }
 
-.radio-toolbar input[type="radio"] {
+.level-toolbar input[type="radio"] {
     display: none;
 }
 
-.radio-toolbar label {
+.level-toolbar label {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 98px;
@@ -76,13 +80,13 @@ body {
     cursor: pointer;
 }
 
-.radio-toolbar input[type="radio"]:checked+label {
+.level-toolbar input[type="radio"]:checked+label {
     box-sizing: border-box;
     background-color: #d0ffb7;
     border: 1px solid #1CA92E;
 }
 
-.radio-toolbar label:hover {
+.level-toolbar label:hover {
     box-sizing: border-box;
     background-color: #d0ffb7;
     border: 1px solid #1CA92E;
