@@ -50,7 +50,11 @@ body {
 .level-toolbar {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 20px;
 }
 
 .level-toolbar input[type="radio"] {
@@ -59,6 +63,7 @@ body {
 
 .level-toolbar label {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 98px;

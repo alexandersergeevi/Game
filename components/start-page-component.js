@@ -14,8 +14,9 @@ export function renderStartPage() {
 
                 <input type="radio" id="level3" name="level" value="Сложный">
                 <label for="level3">3</label>
+                
+                <button id="start-button" class="button">Старт</button>
             </form>
-            <button id="start-button" class="button">Старт</button>
         </div>
     </div>`
 
