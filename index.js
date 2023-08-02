@@ -7,7 +7,8 @@ renderStartPage();
 
 const userLevel = document.getElementById("levels");
 
-document.addEventListener("submit", () => {
+document.addEventListener("submit", (event) => {
+    event.preventDefault();
     console.log(`Выбранный уровень сложности - ${userLevel.elements["level"].value}`);
     renderGamePage();
 }
