@@ -1,15 +1,11 @@
-import { renderStartPage } from "./components/start-page-component.js";
-import { renderGamePage } from "./components/game-page-component.js";
+import { renderStartPage } from './components/start-page-component.js';
+import { renderGamePage } from './components/game-page-component.js';
 
-renderStartPage();
+export const appEl = document.getElementById('main');
 
-// const startButton = document.getElementById("start-button");
+renderStartPage(appEl);
 
-const userLevel = document.getElementById("levels");
-
-document.addEventListener("submit", (event) => {
-    event.preventDefault();
-    console.log(`Выбранный уровень сложности - ${userLevel.elements["level"].value}`);
-    renderGamePage();
-}
-)
+document.addEventListener('submit', (event) => {
+    event.preventDefault();;
+    renderGamePage(appEl);
+});
